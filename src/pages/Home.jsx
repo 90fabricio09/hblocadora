@@ -16,8 +16,8 @@ const Home = () => {
             <Header />
             <main>
                 <HeroCarousel />
-                <Services />
                 <About />
+                <Services />
                 <CTA />
                 <Contact />
             </main>

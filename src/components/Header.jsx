@@ -70,19 +70,19 @@ const Header = () => {
                             </Nav.Link>
                             <span className="nav-separator">•</span>
                             <Nav.Link 
-                                onClick={() => handleNavigation('servicos')} 
-                                className="nav-link-custom"
-                                style={{ cursor: 'pointer' }}
-                            >
-                                Serviços
-                            </Nav.Link>
-                            <span className="nav-separator">•</span>
-                            <Nav.Link 
                                 onClick={() => handleNavigation('sobre')} 
                                 className="nav-link-custom"
                                 style={{ cursor: 'pointer' }}
                             >
                                 Sobre
+                            </Nav.Link>
+                            <span className="nav-separator">•</span>
+                            <Nav.Link 
+                                onClick={() => handleNavigation('servicos')} 
+                                className="nav-link-custom"
+                                style={{ cursor: 'pointer' }}
+                            >
+                                Serviços
                             </Nav.Link>
                             <span className="nav-separator">•</span>
                             <Nav.Link href="/galeria" className="nav-link-custom">Galeria</Nav.Link>

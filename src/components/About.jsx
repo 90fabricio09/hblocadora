@@ -4,7 +4,7 @@ import AboutImage from '../assets/van4.webp';
 
 const About = () => {
     return (
-        <section id="sobre" className="py-5 about-section">
+        <section id="sobre" className="py-5 about-section mt-5">
             <Container>
                 <Row className="align-items-center">
                     <Col lg={6}>

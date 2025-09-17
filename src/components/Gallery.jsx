@@ -2,6 +2,27 @@ import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// Import das imagens
+import van1 from '../assets/images/van1.webp';
+import van2 from '../assets/images/van2.webp';
+import van3 from '../assets/images/van3.webp';
+import van4 from '../assets/images/van4.webp';
+import van5 from '../assets/images/van5.webp';
+import van6 from '../assets/images/van6.webp';
+import van7 from '../assets/images/van7.webp';
+import van8 from '../assets/images/van8.webp';
+import van9 from '../assets/images/van9.webp';
+import van10 from '../assets/images/van10.webp';
+import van11 from '../assets/images/van11.webp';
+import van12 from '../assets/images/van12.jpg';
+import van13 from '../assets/images/van13.jpg';
+import vanf from '../assets/images/vanf.webp';
+import mini1 from '../assets/images/mini1.webp';
+import mini2 from '../assets/images/mini2.webp';
+import carro1 from '../assets/images/carro1.jpg';
+import carro2 from '../assets/images/carro2.jpg';
+import carro3 from '../assets/images/carro3.webp';
+
 const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState(null);
 
@@ -10,117 +31,117 @@ const Gallery = () => {
         // Vans
         {
             id: 1,
-            src: '/src/assets/images/van1.webp',
+            src: van1,
             alt: 'Van HB Locadora 1',
             title: 'Van'
         },
         {
             id: 2,
-            src: '/src/assets/images/van2.webp',
+            src: van2,
             alt: 'Van HB Locadora 2',
             title: 'Van'
         },
         {
             id: 3,
-            src: '/src/assets/images/van3.webp',
+            src: van3,
             alt: 'Van HB Locadora 3',
             title: 'Van'
         },
         {
             id: 4,
-            src: '/src/assets/images/van4.webp',
+            src: van4,
             alt: 'Van HB Locadora 4',
             title: 'Van'
         },
         {
             id: 5,
-            src: '/src/assets/images/van5.webp',
+            src: van5,
             alt: 'Van HB Locadora 5',
             title: 'Van'
         },
         {
             id: 6,
-            src: '/src/assets/images/van6.webp',
+            src: van6,
             alt: 'Van HB Locadora 6',
             title: 'Van'
         },
         {
             id: 7,
-            src: '/src/assets/images/van7.webp',
+            src: van7,
             alt: 'Van HB Locadora 7',
             title: 'Van'
         },
         {
             id: 8,
-            src: '/src/assets/images/van8.webp',
+            src: van8,
             alt: 'Van HB Locadora 8',
             title: 'Van'
         },
         {
             id: 9,
-            src: '/src/assets/images/van9.webp',
+            src: van9,
             alt: 'Van HB Locadora 9',
             title: 'Van'
         },
         {
             id: 10,
-            src: '/src/assets/images/van10.webp',
+            src: van10,
             alt: 'Van HB Locadora 10',
             title: 'Van'
         },
         {
             id: 11,
-            src: '/src/assets/images/van11.webp',
+            src: van11,
             alt: 'Van HB Locadora 11',
             title: 'Van'
         },
         {
             id: 12,
-            src: '/src/assets/images/van12.jpg',
+            src: van12,
             alt: 'Van HB Locadora 12',
             title: 'Van'
         },
         {
             id: 13,
-            src: '/src/assets/images/van13.jpg',
+            src: van13,
             alt: 'Van HB Locadora 13',
             title: 'Van'
         },
         {
             id: 14,
-            src: '/src/assets/images/vanf.webp',
+            src: vanf,
             alt: 'Van HB Locadora F',
             title: 'Van'
         },
         // Mini Vans
         {
             id: 15,
-            src: '/src/assets/images/mini1.webp',
+            src: mini1,
             alt: 'Mini Van HB Locadora 1',
             title: 'Mini Van'
         },
         {
             id: 16,
-            src: '/src/assets/images/mini2.webp',
+            src: mini2,
             alt: 'Mini Van HB Locadora 2',
             title: 'Mini Van'
         },
         // Carros
         {
             id: 17,
-            src: '/src/assets/images/carro1.jpg',
+            src: carro1,
             alt: 'Carro HB Locadora 1',
             title: 'Carro'
         },
         {
             id: 18,
-            src: '/src/assets/images/carro2.jpg',
+            src: carro2,
             alt: 'Carro HB Locadora 2',
             title: 'Carro'
         },
         {
             id: 19,
-            src: '/src/assets/images/carro3.webp',
+            src: carro3,
             alt: 'Carro HB Locadora 3',
             title: 'Carro'
         }

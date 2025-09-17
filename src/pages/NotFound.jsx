@@ -34,13 +34,13 @@ const NotFound = () => {
                                             <i className="bi bi-house me-2"></i>
                                             Início
                                         </Link>
-                                        <Link to="/#servicos" className="suggestion-link">
-                                            <i className="bi bi-gear me-2"></i>
-                                            Serviços
-                                        </Link>
                                         <Link to="/#sobre" className="suggestion-link">
                                             <i className="bi bi-info-circle me-2"></i>
                                             Sobre
+                                        </Link>
+                                        <Link to="/#servicos" className="suggestion-link">
+                                            <i className="bi bi-gear me-2"></i>
+                                            Serviços
                                         </Link>
                                         <Link to="/galeria" className="suggestion-link">
                                             <i className="bi bi-images me-2"></i>
