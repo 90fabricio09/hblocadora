@@ -39,7 +39,7 @@ const Gallery = () => {
             id: 2,
             src: van2,
             alt: 'Van HB Locadora 2',
-            title: 'Van'
+            title: 'Mini Van'
         },
         {
             id: 3,
