@@ -136,8 +136,7 @@ const HeroCarousel = () => {
                             até eventos especiais com excelência.
                         </p>
                                <a 
-                                   href="https://hbfretamento.com.br/pages/galeria.html"
-                                   target="_blank"
+                                   href="/galeria"
                                    rel="noopener noreferrer"
                                    className="btn-frota"
                                >

@@ -13,7 +13,7 @@ const FloatingButtons = () => {
                 <i className="bi bi-instagram"></i>
             </a>
             <a
-                href="https://wa.me/5511947081830?text=Olá%20HB%20Locadora,%20gostaria%20de%20solicitar%20um%20orçamento..."
+                href="https://wa.me/5511947081830?text=Olá%20HB%20Locadora,%20estou%20em%20seu%20site..."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="floating-btn whatsapp-btn"

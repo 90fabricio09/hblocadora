@@ -16,8 +16,7 @@ const CTA = () => {
                                 todas as suas necessidades de transporte com conforto e segurança.
                             </p>
                             <a
-                                href="https://hbfretamento.com.br/pages/galeria.html"
-                                target="_blank"
+                                href="/galeria"
                                 rel="noopener noreferrer"
                                 className="btn-frota"
                             >

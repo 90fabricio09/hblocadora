@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx';
 import Home from './pages/Home.jsx';
+import Gallery from './pages/Gallery.jsx';
 import NotFound from './pages/NotFound.jsx'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <Home /> },
+      {path:"/galeria", element: <Gallery /> },
       {path:"*",
         element: <NotFound />
       }
