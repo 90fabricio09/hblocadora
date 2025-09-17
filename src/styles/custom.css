@@ -1,0 +1,630 @@
+/* Estilos personalizados para HB Locadora */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+    background: #fccd29;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #e6b800;
+}
+*{
+	scroll-behavior: smooth;
+}
+*::selection {
+    background-color: #2a2a2a;
+    color: #fccd29;
+}
+
+/* Carousel personalizado */
+.hero-carousel .carousel-indicators {
+    bottom: 30px;
+}
+
+.hero-carousel .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    background: transparent;
+    margin: 0 8px;
+    transition: all 0.3s ease;
+}
+
+.hero-carousel .carousel-indicators .active {
+    background: white;
+    border-color: white;
+    transform: scale(1.2);
+}
+
+.hero-carousel .carousel-control-prev,
+.hero-carousel .carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.hero-carousel .carousel-control-prev:hover,
+.hero-carousel .carousel-control-next:hover {
+    opacity: 1;
+}
+
+.hero-carousel .carousel-control-prev-icon,
+.hero-carousel .carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+    background-size: 100% 100%;
+}
+
+/* Overlay do carousel */
+.carousel-overlay {
+    transition: background 0.3s ease;
+}
+
+.hero-carousel .carousel-item:hover .carousel-overlay {
+    background: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Cards de serviços */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.service-icon {
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1);
+}
+
+/* Navbar personalizada */
+.navbar {
+    background-color: #2a2a2a !important;
+    min-height: 80px !important;
+    padding: 1rem 0 !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.titulo-header {
+    color: #ffca00 !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffca00 !important;
+}
+
+.navbar-toggler {
+    border-color: #ffca00;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 202, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Botão de contato na navbar */
+.navbar .navbar-nav .nav-link.btn-contato {
+    background-color: #ffca00 !important;
+    color: #2a2a2a !important;
+    border-radius: 25px !important;
+    padding: 8px 20px !important;
+    margin-left: 15px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+}
+
+.navbar .navbar-nav .nav-link.btn-contato:hover {
+    background-color: #e6b800 !important;
+    transform: translateY(-2px) !important;
+    text-decoration: none !important;
+}
+
+.navbar .navbar-nav .nav-link.btn-contato:active {
+    background-color: #ffca00 !important;
+    color: #2a2a2a !important;
+    text-decoration: none !important;
+}
+
+/* Botão de contato geral (para usar fora da navbar) */
+.btn-contato {
+    background-color: #ffca00 !important;
+    color: #2a2a2a !important;
+    border-radius: 25px !important;
+    padding: 8px 20px !important;
+    margin-left: 15px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+}
+
+.btn-contato:hover {
+    transform: translateY(-2px) !important;
+    text-decoration: none !important;
+}
+
+/* Botão específico para "Veja nossa frota" */
+.btn-frota {
+    background-color: #ffca00  !important;
+    color: #2a2a2a !important;
+    border-radius: 25px !important;
+    padding: 6px 16px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+    font-size: 1.2rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+.btn-frota:hover {
+    background-color: #e6b800 !important;
+    transform: translateY(-2px) !important;
+    text-decoration: none !important;
+}
+
+/* Botões personalizados */
+.btn {
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ícones da seção Sobre */
+.about-section .bg-primary,
+.about-section .bg-success,
+.about-section .bg-warning,
+.about-section .bg-info {
+    background-color: #ffca00 !important;
+    border-radius: 50% !important;
+    width: 45px !important;
+    height: 45px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s ease !important;
+}
+
+.about-section .bg-primary i,
+.about-section .bg-success i,
+.about-section .bg-warning i,
+.about-section .bg-info i {
+    color: #2a2a2a !important;
+    font-size: 1.5rem !important;
+}
+
+.about-section .bg-primary:hover,
+.about-section .bg-success:hover,
+.about-section .bg-warning:hover,
+.about-section .bg-info:hover {
+    transform: scale(1.1) !important;
+    box-shadow: 0 5px 15px rgba(255, 202, 0, 0.3) !important;
+}
+
+/* Seções */
+section {
+    scroll-margin-top: 100px;
+}
+
+/* Footer */
+footer {
+    background-color: #2a2a2a !important;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-carousel .carousel-slide {
+        height: 450px !important;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+    
+    .hero-carousel .carousel-control-prev-icon,
+    .hero-carousel .carousel-control-next-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    /* Indicadores do carousel menores em tablets */
+    .hero-carousel .carousel-indicators button {
+        width: 10px !important;
+        height: 10px !important;
+        margin: 0 5px !important;
+    }
+    
+    /* Botão de contato responsivo */
+    .navbar .navbar-nav .nav-link.btn-contato {
+        margin-left: 0 !important;
+        margin-top: 10px !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+    
+    /* Padding responsivo para seções */
+    section {
+        padding: 3rem 0 !important;
+    }
+    
+    .container {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+    
+    /* Padding para cards de serviços */
+    .service-card {
+        padding: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    /* Padding para seção About */
+    .about-section .pe-lg-4 {
+        padding-right: 0 !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    /* Padding para formulário de contato */
+    .form-control.border-2,
+    .form-select.border-2 {
+        padding: 15px 20px !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-carousel .carousel-slide {
+        height: 470px !important;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    /* Logo responsiva no carousel */
+    .carousel-slide img {
+        height: 100px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .carousel-slide p {
+        padding: 20px !important;
+    }
+    
+    /* Logo responsiva no footer */
+    footer img {
+        height: 60px !important;
+    }
+
+    /* Espaçamento da seção About em telas responsivas */
+    .about-section .row {
+        gap: 2rem !important;
+    }
+
+    .about-section .col-lg-6:first-child {
+        margin-bottom: 2rem !important;
+    }
+
+    /* Espaçamento adicional da seção About em telas muito pequenas */
+    .about-section .row {
+        gap: 1.5rem !important;
+    }
+
+    .about-section .col-lg-6:first-child {
+        margin-bottom: 1.5rem !important;
+    }
+    
+    /* Padding ainda maior para telas muito pequenas */
+    section {
+        padding: 2.5rem 0 !important;
+    }
+    
+    .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    /* Padding para cards de serviços em telas pequenas */
+    .service-card {
+        padding: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    /* Padding para formulário em telas pequenas */
+    .form-control.border-2,
+    .form-select.border-2 {
+        padding: 12px 16px !important;
+        margin-bottom: 0.8rem !important;
+    }
+    
+    /* Padding para botões em telas pequenas */
+    .btn-custom {
+        padding: 10px 25px !important;
+    }
+    
+    /* Indicadores do carousel ainda menores em smartphones */
+    .hero-carousel .carousel-indicators button {
+        width: 8px !important;
+        height: 8px !important;
+        margin: 0 4px !important;
+    }
+}
+
+/* Seção de Serviços */
+.service-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+    border-color: #ffca00;
+}
+
+.service-icon {
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1);
+}
+
+/* Seção CTA */
+.cta-section {
+    background: #2a2a2a !important;
+}
+
+.cta-section .btn-warning {
+    background-color: #ffca00 !important;
+    border-color: #ffca00 !important;
+    color: #2a2a2a !important;
+    border-radius: 25px !important;
+    padding: 12px 30px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.cta-section .btn-warning:hover {
+    background-color: #e6b800 !important;
+    border-color: #e6b800 !important;
+    color: #2a2a2a !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(255, 202, 0, 0.3) !important;
+}
+
+.cta-section .btn-outline-light {
+    border-radius: 25px !important;
+    padding: 12px 30px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid rgba(255, 255, 255, 0.8) !important;
+    color: white !important;
+}
+
+.cta-section .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: white !important;
+    color: white !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Seção de Contato */
+.contact-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Formulário de contato */
+.form-control.border-2 {
+    border: 2px solid #e9ecef !important;
+    border-radius: 10px !important;
+    padding: 12px 16px !important;
+    transition: all 0.3s ease !important;
+}
+
+.form-control.border-2:focus {
+    border-color: #ffca00 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 202, 0, 0.25) !important;
+}
+
+.form-select.border-2 {
+    border: 2px solid #e9ecef !important;
+    border-radius: 10px !important;
+    padding: 12px 16px !important;
+    transition: all 0.3s ease !important;
+}
+
+.form-select.border-2:focus {
+    border-color: #ffca00 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 202, 0, 0.25) !important;
+}
+
+.btn-custom {
+    background-color: #ffca00 !important;
+    border-color: #ffca00 !important;
+    color: #2a2a2a !important;
+    border-radius: 25px !important;
+    padding: 12px 30px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-custom:hover {
+    background-color: #e6b800 !important;
+    border-color: #e6b800 !important;
+    color: #2a2a2a !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(255, 202, 0, 0.3) !important;
+}
+
+.btn-custom:disabled {
+    background-color: #ffca00 !important;
+    border-color: #ffca00 !important;
+    color: #2a2a2a !important;
+    opacity: 0.7 !important;
+}
+
+/* Botões flutuantes */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.floating-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: #2a2a2a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.floating-btn i {
+    line-height: 1;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    color: #2a2a2a;
+    text-decoration: none;
+}
+
+.floating-btn:active {
+    transform: translateY(-1px);
+}
+
+.whatsapp-btn {
+    background: #ffca00;
+}
+
+.whatsapp-btn:hover {
+    background: #e6b800;
+}
+
+.instagram-btn {
+    background: #ffca00;
+}
+
+.instagram-btn:hover {
+    background: #e6b800;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .floating-buttons {
+        bottom: 15px;
+        right: 15px;
+        gap: 12px;
+    }
+    
+    .floating-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    
+    .floating-btn i {
+        line-height: 1;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Gradientes personalizados */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.bg-gradient-secondary {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.bg-gradient-info {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
