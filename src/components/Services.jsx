@@ -3,11 +3,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 // Import das imagens para os serviços
 import transporteExecutivo from '../assets/images/carro1.jpg';
-import transportePassageiros from '../assets/images/van6.webp';
+import transportePassageiros from '../assets/images/mini1.webp';
 import transferAeroporto from '../assets/images/aeroporto.jpg';
 import cityTour from '../assets/images/avpaulista.jpg';
 import portos from '../assets/images/porto.jpg';
-import eventos from '../assets/images/van5.webp';
+import eventos from '../assets/images/van14.png';
 import receptivo from '../assets/images/aeroportos.jpg';
 
 const Services = () => {

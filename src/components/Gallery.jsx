@@ -16,6 +16,7 @@ import van10 from '../assets/images/van10.webp';
 import van11 from '../assets/images/van11.webp';
 import van12 from '../assets/images/van12.jpg';
 import van13 from '../assets/images/van13.jpg';
+import van14 from '../assets/images/van14.png';
 import vanf from '../assets/images/vanf.webp';
 import mini1 from '../assets/images/mini1.webp';
 import mini2 from '../assets/images/mini2.webp';
@@ -109,38 +110,44 @@ const Gallery = () => {
         },
         {
             id: 14,
+            src: van14,
+            alt: 'Van HB Locadora 14',
+            title: 'Van'
+        },
+        {
+            id: 15,
             src: vanf,
             alt: 'Van HB Locadora F',
             title: 'Van'
         },
         // Mini Vans
         {
-            id: 15,
+            id: 16,
             src: mini1,
             alt: 'Mini Van HB Locadora 1',
             title: 'Mini Van'
         },
         {
-            id: 16,
+            id: 17,
             src: mini2,
             alt: 'Mini Van HB Locadora 2',
             title: 'Mini Van'
         },
         // Carros
         {
-            id: 17,
+            id: 18,
             src: carro1,
             alt: 'Carro HB Locadora 1',
             title: 'Carro'
         },
         {
-            id: 18,
+            id: 19,
             src: carro2,
             alt: 'Carro HB Locadora 2',
             title: 'Carro'
         },
         {
-            id: 19,
+            id: 20,
             src: carro3,
             alt: 'Carro HB Locadora 3',
             title: 'Carro'
