@@ -7,41 +7,122 @@ const Gallery = () => {
 
     // Array de imagens da galeria
     const galleryImages = [
+        // Vans
         {
             id: 1,
-            src: '/src/assets/slide1.jpg',
-            alt: 'Veículo HB Locadora 1',
-            title: 'Van Executiva'
+            src: '/src/assets/images/van1.webp',
+            alt: 'Van HB Locadora 1',
+            title: 'Van'
         },
         {
             id: 2,
-            src: '/src/assets/slide2.jpg',
-            alt: 'Veículo HB Locadora 2',
-            title: 'Micro-ônibus'
+            src: '/src/assets/images/van2.webp',
+            alt: 'Van HB Locadora 2',
+            title: 'Van'
         },
         {
             id: 3,
-            src: '/src/assets/slide3.jpg',
-            alt: 'Veículo HB Locadora 3',
-            title: 'Ônibus Executivo'
+            src: '/src/assets/images/van3.webp',
+            alt: 'Van HB Locadora 3',
+            title: 'Van'
         },
         {
             id: 4,
-            src: '/src/assets/van4.webp',
-            alt: 'Van HB Locadora',
-            title: 'Van de Luxo'
+            src: '/src/assets/images/van4.webp',
+            alt: 'Van HB Locadora 4',
+            title: 'Van'
         },
         {
             id: 5,
-            src: '/src/assets/hblocadora.png',
-            alt: 'Logo HB Locadora',
-            title: 'Nossa Marca'
+            src: '/src/assets/images/van5.webp',
+            alt: 'Van HB Locadora 5',
+            title: 'Van'
         },
         {
             id: 6,
-            src: '/public/image.png',
-            alt: 'Imagem adicional',
-            title: 'Serviços Especiais'
+            src: '/src/assets/images/van6.webp',
+            alt: 'Van HB Locadora 6',
+            title: 'Van'
+        },
+        {
+            id: 7,
+            src: '/src/assets/images/van7.webp',
+            alt: 'Van HB Locadora 7',
+            title: 'Van'
+        },
+        {
+            id: 8,
+            src: '/src/assets/images/van8.webp',
+            alt: 'Van HB Locadora 8',
+            title: 'Van'
+        },
+        {
+            id: 9,
+            src: '/src/assets/images/van9.webp',
+            alt: 'Van HB Locadora 9',
+            title: 'Van'
+        },
+        {
+            id: 10,
+            src: '/src/assets/images/van10.webp',
+            alt: 'Van HB Locadora 10',
+            title: 'Van'
+        },
+        {
+            id: 11,
+            src: '/src/assets/images/van11.webp',
+            alt: 'Van HB Locadora 11',
+            title: 'Van'
+        },
+        {
+            id: 12,
+            src: '/src/assets/images/van12.jpg',
+            alt: 'Van HB Locadora 12',
+            title: 'Van'
+        },
+        {
+            id: 13,
+            src: '/src/assets/images/van13.jpg',
+            alt: 'Van HB Locadora 13',
+            title: 'Van'
+        },
+        {
+            id: 14,
+            src: '/src/assets/images/vanf.webp',
+            alt: 'Van HB Locadora F',
+            title: 'Van'
+        },
+        // Mini Vans
+        {
+            id: 15,
+            src: '/src/assets/images/mini1.webp',
+            alt: 'Mini Van HB Locadora 1',
+            title: 'Mini Van'
+        },
+        {
+            id: 16,
+            src: '/src/assets/images/mini2.webp',
+            alt: 'Mini Van HB Locadora 2',
+            title: 'Mini Van'
+        },
+        // Carros
+        {
+            id: 17,
+            src: '/src/assets/images/carro1.jpg',
+            alt: 'Carro HB Locadora 1',
+            title: 'Carro'
+        },
+        {
+            id: 18,
+            src: '/src/assets/images/carro2.jpg',
+            alt: 'Carro HB Locadora 2',
+            title: 'Carro'
+        },
+        {
+            id: 19,
+            src: '/src/assets/images/carro3.webp',
+            alt: 'Carro HB Locadora 3',
+            title: 'Carro'
         }
     ];
 

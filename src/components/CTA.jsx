@@ -9,7 +9,7 @@ const CTA = () => {
                     <Col className="text-center">
                         <div className="cta-section p-5 bg-primary rounded-3 text-white">
                             <h3 className="fw-bold mb-3">
-                                Veja a nossa frota
+                                Conheça os nossos veículos
                             </h3>
                             <p className="mb-4 lead">
                                 Conheça nossa frota moderna e diversificada, pronta para atender

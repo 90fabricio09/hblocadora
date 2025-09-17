@@ -85,7 +85,7 @@ const Header = () => {
                                 Sobre
                             </Nav.Link>
                             <span className="nav-separator">•</span>
-                            <Nav.Link href="/galeria" className="nav-link-custom">Frota</Nav.Link>
+                            <Nav.Link href="/galeria" className="nav-link-custom">Galeria</Nav.Link>
                             <span className="nav-separator">•</span>
                             <Nav.Link 
                                 onClick={() => handleNavigation('contato')} 
