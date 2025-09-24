@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { trackEvent } from './Analytics';
 
 const CTA = () => {
     return (
@@ -19,6 +20,15 @@ const CTA = () => {
                                 href="/galeria"
                                 rel="noopener noreferrer"
                                 className="btn-frota"
+                                onClick={() => {
+                                    trackEvent('cta_fleet_click', {
+                                        category: 'Navigation',
+                                        label: 'View Fleet CTA',
+                                        value: 1,
+                                        businessType: 'locadora_van',
+                                        serviceArea: 'sao_paulo'
+                                    });
+                                }}
                             >
                                 <i className="bi bi-images me-2"></i>
                                 Veja a nossa frota

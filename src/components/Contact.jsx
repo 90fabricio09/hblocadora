@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
 import ContactImage from '../assets/contact-us-animate.svg';
+import { trackEvent, trackConversion } from './Analytics';
 
 const Contact = () => {
     const form = useRef();
@@ -14,6 +15,14 @@ const Contact = () => {
         e.preventDefault();
         setIsLoading(true);
 
+        // Tracking do início do envio do formulário
+        trackEvent('form_submit_start', {
+            category: 'Lead Generation',
+            label: 'Contact Form',
+            businessType: 'locadora_van',
+            serviceArea: 'sao_paulo'
+        });
+
         emailjs.sendForm(
             'service_n9fzocm', // Substitua pelo seu Service ID
             'template_ut4vb8o', // Substitua pelo seu Template ID
@@ -21,11 +30,30 @@ const Contact = () => {
             'sjcRQ7raDojf1fG2G' // Substitua pela sua Public Key
         )
         .then((result) => {
+            // Tracking de conversão bem-sucedida
+            trackConversion('form_submit_success', 1);
+            trackEvent('form_submit_success', {
+                category: 'Conversion',
+                label: 'Contact Form Success',
+                value: 1,
+                businessType: 'locadora_van',
+                serviceArea: 'sao_paulo'
+            });
+            
             setAlertMessage('Mensagem enviada com sucesso! Entraremos em contato em breve.');
             setAlertVariant('success');
             setShowAlert(true);
             form.current.reset();
         }, (error) => {
+            // Tracking de erro no formulário
+            trackEvent('form_submit_error', {
+                category: 'Error',
+                label: 'Contact Form Error',
+                value: 0,
+                businessType: 'locadora_van',
+                serviceArea: 'sao_paulo'
+            });
+            
             setAlertMessage(`Erro ao enviar mensagem: ${error.text}. Por favor, use o botão do WhatsApp abaixo ou tente novamente.`);
             setAlertVariant('danger');
             setShowAlert(true);
@@ -164,6 +192,16 @@ const Contact = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="btn-frota"
+                                    onClick={() => {
+                                        trackEvent('whatsapp_click', {
+                                            category: 'Lead Generation',
+                                            label: 'WhatsApp Contact',
+                                            value: 1,
+                                            businessType: 'locadora_van',
+                                            serviceArea: 'sao_paulo'
+                                        });
+                                        trackConversion('whatsapp_contact', 1);
+                                    }}
                                 >
                                     <i className="bi bi-whatsapp me-2"></i>
                                     WhatsApp

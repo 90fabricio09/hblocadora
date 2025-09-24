@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { useLocation, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { trackEvent, trackConversion } from './Analytics';
 
 const Header = () => {
     const location = useLocation();
@@ -9,6 +10,15 @@ const Header = () => {
     
     // Função para lidar com navegação e scroll
     const handleNavigation = (section) => {
+        // Tracking da navegação
+        trackEvent('navigation_click', {
+            category: 'Navigation',
+            label: section,
+            value: 1,
+            businessType: 'locadora_van',
+            serviceArea: 'sao_paulo'
+        });
+        
         if (isGalleryPage) {
             // Se estiver na galeria, navega para home e depois faz scroll
             if (section === 'home') {
@@ -31,20 +41,72 @@ const Header = () => {
                 <Container>
                     <div className="d-flex justify-content-between align-items-center">
                         <div className="contact-info">
-                            <a href="tel:+5511947081830" className="contact-link me-4">
+                            <a 
+                                href="tel:+5511947081830" 
+                                className="contact-link me-4"
+                                onClick={() => {
+                                    trackEvent('phone_click', {
+                                        category: 'Contact',
+                                        label: 'Phone Call',
+                                        value: 1,
+                                        businessType: 'locadora_van',
+                                        serviceArea: 'sao_paulo'
+                                    });
+                                }}
+                            >
                                 <i className="bi bi-telephone-fill me-2"></i>
                                 (11) 94708-1830
                             </a>
-                            <a href="mailto:hblocadora@hotmail.com" className="contact-link">
+                            <a 
+                                href="mailto:hblocadora@hotmail.com" 
+                                className="contact-link"
+                                onClick={() => {
+                                    trackEvent('email_click', {
+                                        category: 'Contact',
+                                        label: 'Email Contact',
+                                        value: 1,
+                                        businessType: 'locadora_van',
+                                        serviceArea: 'sao_paulo'
+                                    });
+                                }}
+                            >
                                 <i className="bi bi-envelope-fill me-2"></i>
                                 hblocadora@hotmail.com
                             </a>
                         </div>
                         <div className="social-links">
-                            <a href="https://www.instagram.com/hbfretamento" target="_blank" rel="noopener noreferrer" className="me-3">
+                            <a 
+                                href="https://www.instagram.com/hbfretamento" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="me-3"
+                                onClick={() => {
+                                    trackEvent('instagram_click', {
+                                        category: 'Social Media',
+                                        label: 'Instagram',
+                                        value: 1,
+                                        businessType: 'locadora_van',
+                                        serviceArea: 'sao_paulo'
+                                    });
+                                }}
+                            >
                                 <i className="bi bi-instagram"></i>
                             </a>
-                            <a href="https://wa.me/5511947081830?text=Olá%20HB%20Locadora,%20estou%20em%20seu%20site..." target="_blank" rel="noopener noreferrer">
+                            <a 
+                                href="https://wa.me/5511947081830?text=Olá%20HB%20Locadora,%20estou%20em%20seu%20site..." 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                onClick={() => {
+                                    trackEvent('whatsapp_header_click', {
+                                        category: 'Lead Generation',
+                                        label: 'WhatsApp Header',
+                                        value: 1,
+                                        businessType: 'locadora_van',
+                                        serviceArea: 'sao_paulo'
+                                    });
+                                    trackConversion('whatsapp_header_contact', 1);
+                                }}
+                            >
                                 <i className="bi bi-whatsapp"></i>
                             </a>
                         </div>
@@ -99,6 +161,16 @@ const Header = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn-contato"
+                                onClick={() => {
+                                    trackEvent('quote_button_click', {
+                                        category: 'Lead Generation',
+                                        label: 'Quote Button Header',
+                                        value: 1,
+                                        businessType: 'locadora_van',
+                                        serviceArea: 'sao_paulo'
+                                    });
+                                    trackConversion('quote_request', 1);
+                                }}
                             >
                                 <i className="bi bi-car-front me-2"></i>
                                 Orçamento
