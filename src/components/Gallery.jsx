@@ -28,7 +28,6 @@ import bus2 from '../assets/images/bus2.png';
 import bus3 from '../assets/images/bus3.png';
 import bus4 from '../assets/images/bus4.png';
 import bus5 from '../assets/images/bus5.png';
-import bus6 from '../assets/images/bus6.png';
 
 const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -187,12 +186,6 @@ const Gallery = () => {
             id: 25,
             src: bus5,
             alt: 'Micro-ônibus HB Locadora 5',
-            title: 'Micro-ônibus'
-        },
-        {
-            id: 26,
-            src: bus6,
-            alt: 'Micro-ônibus HB Locadora 6',
             title: 'Micro-ônibus'
         }
     ];
