@@ -23,6 +23,12 @@ import mini2 from '../assets/images/mini2.webp';
 import carro1 from '../assets/images/carro1.jpg';
 import carro2 from '../assets/images/carro2.jpg';
 import carro3 from '../assets/images/carro3.webp';
+import bus1 from '../assets/images/bus1.png';
+import bus2 from '../assets/images/bus2.png';
+import bus3 from '../assets/images/bus3.png';
+import bus4 from '../assets/images/bus4.png';
+import bus5 from '../assets/images/bus5.png';
+import bus6 from '../assets/images/bus6.png';
 
 const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -151,6 +157,43 @@ const Gallery = () => {
             src: carro3,
             alt: 'Carro HB Locadora 3',
             title: 'Carro'
+        },
+        // Micro-ônibus
+        {
+            id: 21,
+            src: bus1,
+            alt: 'Micro-ônibus HB Locadora 1',
+            title: 'Micro-ônibus'
+        },
+        {
+            id: 22,
+            src: bus2,
+            alt: 'Micro-ônibus HB Locadora 2',
+            title: 'Micro-ônibus'
+        },
+        {
+            id: 23,
+            src: bus3,
+            alt: 'Micro-ônibus HB Locadora 3',
+            title: 'Micro-ônibus'
+        },
+        {
+            id: 24,
+            src: bus4,
+            alt: 'Micro-ônibus HB Locadora 4',
+            title: 'Micro-ônibus'
+        },
+        {
+            id: 25,
+            src: bus5,
+            alt: 'Micro-ônibus HB Locadora 5',
+            title: 'Micro-ônibus'
+        },
+        {
+            id: 26,
+            src: bus6,
+            alt: 'Micro-ônibus HB Locadora 6',
+            title: 'Micro-ônibus'
         }
     ];
 
